@@ -442,7 +442,7 @@
   <header class="header">
     <div>
       <div class="header-name">Francis Garry<br/><span>Nillama</span></div>
-      <div class="header-title">Full-Stack Software Engineer · AI-Integrated Systems</div>
+      <div class="header-title">AI Engineer · LLM Systems &amp; Agentic Workflows · Full&#8209;Stack&nbsp;Software&nbsp;Engineer</div>
     </div>
     <div class="header-contact">
       <span class="contact-label">Contact</span>
@@ -461,7 +461,7 @@
       <div class="section-rule"></div>
     </div>
     <p class="summary">
-      <strong>Full-Stack Software Engineer</strong> building production web systems and AI-integrated workflows. Primary engineer on Lifewood Philippines' company-wide <strong>HRIS</strong> (219 commits) and its multi-market <strong>property-management platform</strong> (144 commits), sole author of an <strong>agentic IT-ticketing system</strong> on the Claude Agent SDK, and independently building a <strong>multi-tenant predictive dialer</strong> on Asterisk 22 ARI. Works in strict <strong>TypeScript</strong> across <strong>Next.js 15 / React 19</strong>, <strong>Express 5</strong> and <strong>Fastify 5</strong>, with <strong>PostgreSQL row-level security</strong>, Supabase and Redis — on a foundation of Python/Django OCR and LLM pipelines. Evidence-first engineering: verified deployments, documented findings, migrations that record intent.
+      Engineer who builds <strong>LLM systems other people actually operate</strong> — retrieval over messy real-world documents, agentic workflows with tool use, and the guard rails and runbooks that make non-developers willing to trust them. Sole author of an <strong>agentic IT-remediation platform</strong> on the <strong>Claude Agent SDK</strong>, where a Python worker reproduces, fixes and tests a bug on an isolated branch behind a <strong>PreToolUse-hook gatekeeper</strong> and a human reviews the diff. Lead contributor on Lifewood Philippines' multi-market <strong>property-management platform</strong> (<span class="metric">212 of 324 commits</span>) and primary engineer on its company-wide <strong>HRIS</strong> (<span class="metric">222 of 401 commits</span>); independently building a <strong>multi-tenant predictive dialer</strong> on Asterisk 22 ARI. Day-to-day stack is <strong>Python</strong>, <strong>Claude (Agent SDK, MCP, hooks)</strong> and <strong>PostgreSQL</strong>, with strict <strong>TypeScript</strong> across <strong>Next.js 15 / React 19</strong> where the work is full-stack. Evidence-first: predictions stated before measurement, findings documented, and automation demoted to decision-support when the users' evidence says so.
     </p>
   </section>
 
@@ -555,7 +555,13 @@
         <div class="skill-card-title">AI &amp; Automation</div>
         <div class="skill-tags">
           <span class="tag accent">Claude Agent SDK</span>
+          <span class="tag accent">Model Context Protocol (MCP)</span>
+          <span class="tag accent">Claude Code (subagents / hooks)</span>
           <span class="tag accent">OpenAI / Anthropic APIs</span>
+          <span class="tag">Agentic Workflows &amp; Tool Use</span>
+          <span class="tag">Agent Guard Rails (PreToolUse hooks, allow-lists)</span>
+          <span class="tag">Model Tiering</span>
+          <span class="tag">Evaluation &amp; Pilot Metrics</span>
           <span class="tag">Prompt &amp; Workflow Design</span>
           <span class="tag">RAG (LangChain / ChromaDB / Ollama)</span>
           <span class="tag">OCR (EasyOCR / OpenCV)</span>
@@ -613,9 +619,9 @@
         <div class="exp-period">Jun 2026 – Present<br/><span style="color:var(--teal)">Full-time · 4 months</span></div>
       </div>
       <ul class="exp-bullets">
-        <li><span><strong>LifewoodPH HRIS</strong> — primary engineer (<span class="metric">219 of 330 commits</span>) on the company-wide HR system for the Cebu and Legazpi branches: public intake → employee records, leave-credit accrual engine (shared pool, per-type caps, accrual from effective date), overtime/COE/BIR requests, RFID attendance with absence and missed-punch monitoring, org chart and department model, employee-ID minting, and security hardening (anon RLS revoke, HMAC-keyed identity, service-role boot checks). Next.js 15 · React 19 · Express 5 · Supabase · shared Zod contract monorepo · Railway + Vercel.</span></li>
-        <li><span><strong>AngelHost PMS</strong> — lead contributor (<span class="metric">144 of 227 commits</span>) on a property-management system for a KL / Manila / USA short-term-rental portfolio: shared ingestion core with four transports (Power Automate, scheduled Microsoft Graph pull, local sync, manual upload) for OTA revenue workbooks, per-market revenue tables with parser gates, dashboard KPIs with unified market/unit/platform filters and sync-freshness, 30+ SQL migrations.</span></li>
-        <li><span><strong>Lifewood-Nexus</strong> — sole author of an IT ticketing platform with <em>agentic auto-remediation</em>: a Python worker on the Claude Agent SDK reproduces and fixes bugs on an isolated branch behind a PreToolUse-hook gatekeeper; IT reviews, merges or reverts. Nine phases from Supabase RLS schema to gated Auto-Fix, rate limiting and worker health.</span></li>
+        <li><span><strong>AngelHost PMS</strong> — lead contributor (<span class="metric">212 of 324 commits</span>) on a property-management system for a KL / Manila / USA short-term-rental portfolio. The problem was the one every operations team has: revenue and booking records arriving as workbooks that took days of manual handling before anyone could analyse them. Built a shared ingestion core with <strong>four transports</strong> (Power Automate, scheduled Microsoft Graph pull, local sync, manual upload) feeding per-market revenue tables behind <strong>parser gates that hold a cut-over on a failed check</strong> rather than letting bad rows land; unified calendar and dashboard KPIs across eight OTA channels with market/unit/platform filters and sync-freshness; 30+ SQL migrations. Also ran the read-only investigation of the legacy platform before integration, documented the findings, and escalated a critical access-control exposure to the owner ahead of any migration decision.</span></li>
+        <li><span><strong>Lifewood-Nexus</strong> — sole author of an IT ticketing platform with <em>agentic auto-remediation</em>: a Python worker on the Claude Agent SDK reproduces, fixes and tests a bug on an isolated branch behind a PreToolUse-hook gatekeeper (scoped reads, allow-listed shell, protected-path writes); IT reviews the diff and merges, or a gated Auto-Fix applies it inside a safety envelope. Nine phases from Supabase RLS schema through model tiering, crash-safe job claiming, worker health, runbooks and a pilot plan. Two design calls corrected after it was built: access control rebuilt from a flat IT role into a project-scoped three-tier model, and the employee-facing ticket history cut back to a resolution receipt once it was clear it exposed internal fix detail to the person who filed the ticket.</span></li>
+        <li><span><strong>LifewoodPH HRIS</strong> — primary engineer (<span class="metric">222 of 401 commits</span>) on the company-wide HR system for the Cebu and Legazpi branches: public intake → employee records, leave-credit accrual engine (shared pool, per-type caps, accrual from effective date), <strong>rigid-format statutory document generation</strong> (BIR, certificate-of-employment and overtime requests) where the template is fixed and the content is not, RFID attendance with absence and missed-punch monitoring, org chart and department model, employee-ID minting, and security hardening (anon RLS revoke, HMAC-keyed identity, service-role boot checks). Next.js 15 · React 19 · Express 5 · Supabase · shared Zod contract monorepo · Railway + Vercel.</span></li>
         <li><span><strong>LifeReach · TaskFlow LW · PHLifeTerm · LifeVault</strong> — monorepo restructure with a shared TypeScript contract and Vercel build fixes; led a production data-loss incident remediation (safe user deletion, destructive-cascade fixes, OCR-proxy auth); OJT app batch management, activity calendar and grading fixes; biweekly automated archive of every org repo, Supabase database and SharePoint library.</span></li>
         <li><span>IT executive assistant and mentor: received system handovers, managed company accounts and tooling, proposed the adopted documentation standards, and designed and graded activities for intern batches 9–10 (AI chatbots, WhatsApp bots, web dev, game dev, hackathon, portfolios).</span></li>
       </ul>
@@ -647,8 +653,8 @@
         <div class="exp-period">2022 – 2024<br/><span style="color:var(--gold)">2 Years</span></div>
       </div>
       <ul class="exp-bullets">
-        <li><span>Managed high-volume client interactions requiring rigorous process adherence, data accuracy, and operational efficiency.</span></li>
-        <li><span>Developed strong professional communication, quality assurance mindset, and team collaboration skills applicable to enterprise software delivery.</span></li>
+        <li><span>Two years of SLA-bound client work in English, requiring rigorous process adherence, data accuracy and operational efficiency.</span></li>
+        <li><span>Where the written-communication discipline came from — explaining a technical decision in plain English to people who are not developers. It now shows up in commit messages, review reports, user manuals, runbooks and handoff documents.</span></li>
       </ul>
     </div>
   </section>
@@ -658,6 +664,23 @@
     <div class="section-header">
       <span class="section-label">Featured Projects</span>
       <div class="section-rule"></div>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <div class="project-name">Lifewood AI Agent — V1 to V4</div>
+        <div class="project-type">AI Platform · Company Deployment</div>
+      </div>
+      <div class="project-stack">Python · Django · React · OpenAI / Claude APIs · EasyOCR · PostgreSQL · RAG (PDF ingestion)</div>
+      <div class="project-desc">Expense-intelligence platform built across four production releases and presented to the Lifewood CEO. Staff photograph a receipt — printed or handwritten — and the system extracts it with OCR, categorises it, lays the result out on an analytics dashboard, and answers plain-language questions about the data through an LLM agent. Code: <a href="https://github.com/FrancisGarryNillama/Lifewood_Ai-Agent-V4">github.com/FrancisGarryNillama/Lifewood_Ai-Agent-V4</a></div>
+      <ul class="project-bullets">
+        <li><span>Receipt OCR and auto-categorisation, including handwritten receipts — <span class="metric">~2–5 s</span> extraction</span></li>
+        <li><span>LLM conversational querying over the extracted data, <span class="metric">150–300 ms</span> analytics response in production</span></li>
+        <li><span>RAG pipeline added for PDF ingestion, so source documents are queryable alongside the structured data</span></li>
+        <li><span>Structured Excel / PDF export pipelines and real-time dashboards</span></li>
+        <li><span>Admin and super-admin RBAC, governance rules, and written user manuals for both roles</span></li>
+        <li><span>Four iterative releases with modular backend services: analytics, exports, governance, agent logic</span></li>
+      </ul>
     </div>
 
     <div class="project">
@@ -690,23 +713,6 @@
         <li>Unified OTA inbox with playbook-ranked smart replies</li>
         <li>Finance analytics grouped by currency (MYR / PHP), never summed across</li>
         <li>KeelSight: versioned product plan for the marketing / lead-gen sister product</li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <div class="project-head">
-        <div class="project-name">Lifewood AI Agent — V1 to V4 Evolution</div>
-        <div class="project-type">AI Platform</div>
-      </div>
-      <div class="project-stack">Python · Django · React · OpenAI/Claude APIs · PostgreSQL · EasyOCR</div>
-      <div class="project-desc">End-to-end AI-powered financial intelligence platform, iteratively scaled across four production releases. Demonstrates progressive architecture refinement from prototype to enterprise-grade system.</div>
-      <ul class="project-bullets">
-        <li><span>Delivered AI receipt recognition and auto-categorization with <span class="metric">OCR latency &lt;5s</span></span></li>
-        <li>Built LLM-driven conversational querying for real-time financial insights</li>
-        <li>Modular backend services: analytics, exports, governance, AI agent logic</li>
-        <li><span>Analytics response time benchmarked at <span class="metric">150–300ms</span> in production</span></li>
-        <li>Implemented Excel/PDF export pipelines and real-time dashboards</li>
-        <li>Designed scalable REST API service layers for long-term maintainability</li>
       </ul>
     </div>
 
@@ -758,15 +764,16 @@
     <div class="two-col">
       <div class="project">
         <div class="project-head">
-          <div class="project-name">Cred-It — Transferee Accreditation System</div>
-          <div class="project-type">Capstone · AI / OCR</div>
+          <div class="project-name">Cred-It — Automated Credit Evaluation</div>
+          <div class="project-type">Document Intelligence</div>
         </div>
-        <div class="project-stack">Python · EasyOCR · Fuzzy Matching · JavaScript · Docker</div>
+        <div class="project-stack">Python · Django 4.2 · Django REST Framework · EasyOCR · OpenCV · PostgreSQL · Redis · React · Docker Compose · pytest</div>
+        <div class="project-desc"><strong>Lead author, team of five.</strong> Replaced a manual credit-evaluation process for the CIT-U College of Computer Studies. A student uploads a Transcript of Records, EasyOCR + OpenCV extract it into structured subject/grade/unit data, and a similarity matcher fuzzy-matches those subjects against the department's curricula to propose credit — through a three-stage workflow (Request → Pending → Finalised) with a side-by-side transcript-versus-curriculum view for the evaluating faculty member.</div>
         <ul class="project-bullets" style="grid-template-columns:1fr;">
-          <li>OCR of Transcripts of Records into structured subject data</li>
-          <li>Fuzzy matching against curricula to automate credit evaluation</li>
-          <li>Handles noisy, inconsistent document formats</li>
-          <li>Built for the CIT-U CCS department (IT332 capstone)</li>
+          <li><span>Handles noisy, inconsistent real transcript formats, not clean synthetic input</span></li>
+          <li><span><span class="metric">Measured with 39 real users</span> (students and faculty), not demoed — a full usability study rather than a demo day</span></li>
+          <li><span>System Usability Scale <span class="metric">73.4</span>, above the 68 benchmark; most students completed core tasks inside 10 minutes, and faculty rated the side-by-side comparison view the most useful part of the system</span></li>
+          <li><span><strong>What the evidence changed:</strong> OCR was also the single largest source of user frustration — extraction errors in subject codes, grades and units cost more trust than the automation saved. The conclusion: extraction belongs in the system as a <strong>decision-support step with visible confidence and easy manual correction</strong>, not an autonomous one. Same shape as the human-review gate in Nexus.</span></li>
         </ul>
       </div>
 
@@ -776,11 +783,12 @@
           <div class="project-type">Applied AI</div>
         </div>
         <div class="project-stack">Django · Next.js · LangChain · ChromaDB · Ollama · SQLite</div>
+        <div class="project-desc">Expense-intelligence monorepo with a <strong>fully local retrieval pipeline</strong> — documents are chunked, embedded and served from ChromaDB against an Ollama-hosted model, so private financial documents are queryable without anything leaving the machine.</div>
         <ul class="project-bullets" style="grid-template-columns:1fr;">
-          <li>Django API + Next.js dashboard for expense tracking and analytics</li>
-          <li>Optional local RAG pipeline over technical documents</li>
-          <li>Security module: input validation, compliance, content sanitiser</li>
-          <li>Google Drive integration and KPI / risk-flag models</li>
+          <li><span>Django API + Next.js dashboard for expense tracking and analytics</span></li>
+          <li><span>Local RAG over technical and financial documents (LangChain · ChromaDB · Ollama), no third-party inference</span></li>
+          <li><span>Security module in front of the model: input validation, compliance rules and an external-content sanitiser, so retrieved text cannot smuggle instructions into the prompt</span></li>
+          <li><span>Google Drive ingestion, KPI and risk-flag models over the extracted data</span></li>
         </ul>
       </div>
     </div>

@@ -13,7 +13,7 @@
 
 # Francis Garry Nillama — CV · 2026
 
-### AI-Integrated Full-Stack Engineer
+### AI Engineer · LLM Systems & Agentic Workflows
 
 <br/>
 
@@ -307,6 +307,6 @@ To change the color scheme, update these six variables — everything else inher
 Built with intention · Deployed with purpose · Maintained with pride
 ```
 
-*© 2026 Francis Garry Nillama · AI-Integrated Full-Stack Engineer*
+*© 2026 Francis Garry Nillama · AI Engineer · LLM Systems & Agentic Workflows*
 
 </div>
